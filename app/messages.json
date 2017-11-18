@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "name": "Ivan Ivanov",
+      "messages": [
+        "Hi!",
+        "My name is Ivan Ivanov.",
+        "How are you dong?"
+      ]
+    },
+    {
+      "name": "Petr Petrov",
+      "messages": [
+        "Hi!",
+        "My name is Petr Petrov.",
+        "How are you dong?"
+      ]
+    },
+    {
+      "name": "Sidor Sidorov",
+      "messages": [
+        "Hi!",
+        "My name is Sidor Sidorov.",
+        "How are you dong?"
+      ]
+    }
+  ]
+}

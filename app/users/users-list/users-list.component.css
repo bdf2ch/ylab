@@ -1,0 +1,228 @@
+#users-list {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+#users-list-search {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+#users-list-search #users-search {
+  width: 100%;
+  box-sizing: border-box;
+}
+#users-list-filters {
+  margin-bottom: 20px;
+  height: 20px;
+}
+#users-list-filters .filter {
+  padding-left: 5px;
+  display: inline-block;
+  height: 20px;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 20px;
+  background: #FFD54F;
+  border-radius: 2px;
+}
+#users-list-filters .filter .fa {
+  margin-right: 5px;
+  color: #455A64;
+}
+#users-list-filters .filter .cancel {
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  background: #FFC107;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+}
+#users-list-filters .filter .cancel:hover {
+  color: white;
+  background: #FFA000;
+}
+#user-list-header {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #78909C;
+}
+#user-list-header .fa {
+  margin-right: 5px;
+}
+/* Target landscape smartphones, portrait tablets, narrow desktops */
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  #users-list-filters {
+    height: 30px;
+  }
+  #users-list-filters .filter {
+    height: 30px;
+  }
+  #users-list-filters .filter .cancel {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  #user-list-header {
+    display: none;
+  }
+  #users-list {
+    padding: 10px;
+  }
+  #users-list .user-name-position {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #users-list .user-name-position .position {
+    display: none;
+  }
+  #users-list .user-email {
+    display: none;
+  }
+  #users-list .user-account {
+    display: none;
+  }
+  #users-list .user-division {
+    display: none;
+  }
+}
+/* Target landscape tablets, desktops */
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+  #users-list-filters {
+    height: 30px;
+  }
+  #users-list-filters .filter {
+    height: 30px;
+  }
+  #users-list-filters .filter .cancel {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  #user-list-header .header-image {
+    margin-right: 20px;
+    width: 40px;
+  }
+  #user-list-header .header-user-name-position {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #user-list-header .header-user-email {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #user-list-header .header-user-account {
+    display: none;
+  }
+  #user-list-header .header-user-division {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+  }
+  #users-list {
+    padding: 20px;
+  }
+  #users-list .user-name-position {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #users-list .user-name-position .division {
+    display: none;
+  }
+  #users-list .user-email {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #users-list .user-account {
+    display: none;
+  }
+  #users-list .user-division {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+  }
+}
+/* Target big displays */
+@media screen and (min-width: 1400px) {
+  #user-list-header .header-image {
+    margin-right: 20px;
+    width: 40px;
+  }
+  #user-list-header .header-user-name-position {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #user-list-header .header-user-email {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #user-list-header .header-user-account {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #user-list-header .header-user-division {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+  }
+  #users-list {
+    padding: 20px;
+  }
+  #users-list .user-name-position {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #users-list .user-name-position .division {
+    display: none;
+  }
+  #users-list .user-email {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #users-list .user-account {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }
+  #users-list .user-division {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+  }
+}

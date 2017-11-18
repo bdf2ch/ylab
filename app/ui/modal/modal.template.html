@@ -1,0 +1,21 @@
+<div class="modal-background" ng-show="$ctrl.modalOpened === true" ng-style="{ 'z-index': 5000 + $ctrl.modalDepth }" ng-cloak>
+    <div class="modal-component" ng-style="{ 'width': $ctrl.modalWidth }" ng-class="{'full-screen-on-mobile': $ctrl.modalFullScreenOnMobile === true}">
+        <div class="modal-header">
+            <div class="header-controls">
+                <span class="title">{{ $ctrl.label }}</span>
+                <span class="control" title="Закрыть" ng-click="$ctrl.close(true)">Закрыть</span>
+            </div>
+            <div class="header-content">
+                <i ng-show="$ctrl.modalIcon !== ''" class="{{ 'fa ' + $ctrl.modalIcon }}"></i>
+                <div class="details">
+                    <div class="title">{{ $ctrl.modalCaption }}</div>
+                    <div class="description" ng-show="$ctrl.modalDescription !== ''">{{ $ctrl.modalDescription }}</div>
+                </div>
+            </div>
+        </div>
+        <div ng-transclude></div>
+        <!--
+        <div class="modal-content" ng-style="{'height': $ctrl.modalHeight, 'bottom': $ctrl.modalFooterHeight }" ng-transclude></div>
+        -->
+    </div>
+</div>
